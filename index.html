@@ -1,0 +1,977 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <title>MEAN.IO 文档</title>
+
+    <!-- Flatdoc -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/legacy.js"></script>
+    <script src="./assets/js/flatdoc.js"></script>
+
+    <!-- Flatdoc theme -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <script src="./assets/js/script.js"></script>
+
+</head>
+<body role="flatdoc" class="no-literate large-brief">
+<div class="content-root">
+    <div class="menubar">
+        <div class="menu section" role="flatdoc-menu">
+            <ul>
+                <li id="root-item" class="level-0">
+                    <ul class="level-1" id="root-list">
+                        <li id="mean-stack-item" class="level-1"><a id="mean-stack-link" href="#mean-stack"
+                                                                    class="level-1"> MEAN Stack</a>
+                            <ul class="level-2" id="mean-stack-list">
+                                <li id="mean-stack-prerequisite-technologies-item" class="level-2"><a
+                                        id="mean-stack-prerequisite-technologies-link"
+                                        href="#mean-stack-prerequisite-technologies" class="level-2">前期准备</a>
+                                    <ul class="level-3" id="mean-stack-prerequisite-technologies-list">
+                                        <li id="mean-stack-prerequisite-technologies-linux-item" class="level-3"><a
+                                                id="mean-stack-prerequisite-technologies-linux-link"
+                                                href="#mean-stack-prerequisite-technologies-linux"
+                                                class="level-3">Linux</a></li>
+                                        <li id="mean-stack-prerequisite-technologies-windows-item" class="level-3"><a
+                                                id="mean-stack-prerequisite-technologies-windows-link"
+                                                href="#mean-stack-prerequisite-technologies-windows" class="level-3">Windows</a>
+                                        </li>
+                                        <li id="mean-stack-prerequisite-technologies-osx-item" class="level-3"><a
+                                                id="mean-stack-prerequisite-technologies-osx-link"
+                                                href="#mean-stack-prerequisite-technologies-osx" class="level-3">OSX</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="mean-stack-prerequisite-packages-item" class="level-2"><a
+                                        id="mean-stack-prerequisite-packages-link"
+                                        href="#mean-stack-prerequisite-packages" class="level-2">必备安装包</a></li>
+                                <li id="mean-stack-installation-item" class="level-2"><a
+                                        id="mean-stack-installation-link" href="#mean-stack-installation"
+                                        class="level-2">安装</a>
+                                    <ul class="level-3" id="mean-stack-installation-list">
+                                        <li id="mean-stack-installation-install-the-mean-cli-item" class="level-3"><a
+                                                id="mean-stack-installation-install-the-mean-cli-link"
+                                                href="#mean-stack-installation-install-the-mean-cli" class="level-3">
+                                            安装MEAN CLI</a></li>
+                                        <li id="mean-stack-installation-invoke-node-with-a-task-manager-item"
+                                            class="level-3"><a
+                                                id="mean-stack-installation-invoke-node-with-a-task-manager-link"
+                                                href="#mean-stack-installation-invoke-node-with-a-task-manager"
+                                                class="level-3">使用任务管理器启用node</a></li>
+                                        <li id="mean-stack-installation-troubleshooting-item" class="level-3"><a
+                                                id="mean-stack-installation-troubleshooting-link"
+                                                href="#mean-stack-installation-troubleshooting" class="level-3">故障检测</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="mean-stack-technologies-item" class="level-2"><a
+                                        id="mean-stack-technologies-link" href="#mean-stack-technologies"
+                                        class="level-2">技术</a>
+                                    <ul class="level-3" id="mean-stack-technologies-list">
+                                        <li id="mean-stack-technologies-the-mean-stack-item" class="level-3"><a
+                                                id="mean-stack-technologies-the-mean-stack-link"
+                                                href="#mean-stack-technologies-the-mean-stack" class="level-3">MEAN全栈</a></li>
+                                        <li id="mean-stack-technologies-additional-tools-item" class="level-3"><a
+                                                id="mean-stack-technologies-additional-tools-link"
+                                                href="#mean-stack-technologies-additional-tools" class="level-3">附加工具</a></li>
+                                    </ul>
+                                </li>
+                                <li id="mean-stack-cli-item" class="level-2"><a id="mean-stack-cli-link"
+                                                                                href="#mean-stack-cli" class="level-2">命令行界面（CLI）</a>
+                                    <ul class="level-3" id="mean-stack-cli-list">
+                                        <li id="mean-stack-cli-overview-item" class="level-3"><a
+                                                id="mean-stack-cli-overview-link" href="#mean-stack-cli-overview"
+                                                class="level-3">预览</a></li>
+                                        <li id="mean-stack-cli-users-item" class="level-3"><a
+                                                id="mean-stack-cli-users-link" href="#mean-stack-cli-users"
+                                                class="level-3">用户</a></li>
+                                        <li id="mean-stack-cli-packages-item" class="level-3"><a
+                                                id="mean-stack-cli-packages-link" href="#mean-stack-cli-packages"
+                                                class="level-3">包</a></li>
+                                        <li id="mean-stack-cli-misc-item" class="level-3"><a
+                                                id="mean-stack-cli-misc-link" href="#mean-stack-cli-misc"
+                                                class="level-3">杂项</a></li>
+                                    </ul>
+                                </li>
+                                <li id="mean-stack-packages-item" class="level-2"><a id="mean-stack-packages-link"
+                                                                                     href="#mean-stack-packages"
+                                                                                     class="level-2">包</a>
+                                    <ul class="level-3" id="mean-stack-packages-list">
+                                        <li id="mean-stack-packages-core-packages-item" class="level-3"><a
+                                                id="mean-stack-packages-core-packages-link"
+                                                href="#mean-stack-packages-core-packages" class="level-3">核心包</a></li>
+                                        <li id="mean-stack-packages-files-structure-item" class="level-3"><a
+                                                id="mean-stack-packages-files-structure-link"
+                                                href="#mean-stack-packages-files-structure" class="level-3">文件结构</a></li>
+                                        <li id="mean-stack-packages-registering-a-package-item" class="level-3"><a
+                                                id="mean-stack-packages-registering-a-package-link"
+                                                href="#mean-stack-packages-registering-a-package" class="level-3">注册包</a></li>
+                                        <li id="mean-stack-packages-dependency-injection-item" class="level-3"><a
+                                                id="mean-stack-packages-dependency-injection-link"
+                                                href="#mean-stack-packages-dependency-injection" class="level-3">依赖注入</a></li>
+                                        <li id="mean-stack-packages-angular-modules-and-dependencies-item"
+                                            class="level-3"><a
+                                                id="mean-stack-packages-angular-modules-and-dependencies-link"
+                                                href="#mean-stack-packages-angular-modules-and-dependencies"
+                                                class="level-3">Angular模块和依赖</a></li>
+                                        <li id="mean-stack-packages-assets-and-aggregation-item" class="level-3"><a
+                                                id="mean-stack-packages-assets-and-aggregation-link"
+                                                href="#mean-stack-packages-assets-and-aggregation" class="level-3">Assets与Aggregation</a></li>
+                                        <li id="mean-stack-packages-settings-object-item" class="level-3"><a
+                                                id="mean-stack-packages-settings-object-link"
+                                                href="#mean-stack-packages-settings-object" class="level-3">Settings对象</a></li>
+                                        <li id="mean-stack-packages-express-routes-item" class="level-3"><a
+                                                id="mean-stack-packages-express-routes-link"
+                                                href="#mean-stack-packages-express-routes" class="level-3">Express路由</a></li>
+                                        <li id="mean-stack-packages-angular-routes-item" class="level-3"><a
+                                                id="mean-stack-packages-angular-routes-link"
+                                                href="#mean-stack-packages-angular-routes" class="level-3">Angular路由</a></li>
+                                        <li id="mean-stack-packages-menu-system-item" class="level-3"><a
+                                                id="mean-stack-packages-menu-system-link"
+                                                href="#mean-stack-packages-menu-system" class="level-3">菜单系统</a>
+                                        </li>
+                                        <li id="mean-stack-packages-html-view-rendering-item" class="level-3"><a
+                                                id="mean-stack-packages-html-view-rendering-link"
+                                                href="#mean-stack-packages-html-view-rendering" class="level-3">Html视图渲染</a></li>
+                                        <li id="mean-stack-packages-overriding-the-default-layouts-item"
+                                            class="level-3"><a
+                                                id="mean-stack-packages-overriding-the-default-layouts-link"
+                                                href="#mean-stack-packages-overriding-the-default-layouts"
+                                                class="level-3">重写默认布局</a></li>
+                                        <li id="mean-stack-packages-overriding-views-item" class="level-3"><a
+                                                id="mean-stack-packages-overriding-views-link"
+                                                href="#mean-stack-packages-overriding-views" class="level-3">重写视图</a></li>
+                                        <li id="mean-stack-packages-creating-your-own-package-item" class="level-3"><a
+                                                id="mean-stack-packages-creating-your-own-package-link"
+                                                href="#mean-stack-packages-creating-your-own-package" class="level-3">创建自己的包</a></li>
+                                        <li id="mean-stack-packages-deleting-a-package-item" class="level-3"><a
+                                                id="mean-stack-packages-deleting-a-package-link"
+                                                href="#mean-stack-packages-deleting-a-package" class="level-3">删除一个包</a></li>
+                                        <li id="mean-stack-packages-contributing-your-package-item" class="level-3"><a
+                                                id="mean-stack-packages-contributing-your-package-link"
+                                                href="#mean-stack-packages-contributing-your-package" class="level-3">捐献你的包</a></li>
+                                    </ul>
+                                </li>
+                                <li id="mean-stack-mean-network-item" class="level-2"><a
+                                        id="mean-stack-mean-network-link" href="#mean-stack-mean-network"
+                                        class="level-2">MEAN 网络</a>
+                                    <ul class="level-3" id="mean-stack-mean-network-list">
+                                        <li id="mean-stack-mean-network-network-user-management-item" class="level-3"><a
+                                                id="mean-stack-mean-network-network-user-management-link"
+                                                href="#mean-stack-mean-network-network-user-management" class="level-3">网络用户管理</a></li>
+                                        <li id="mean-stack-mean-network-deploy-item" class="level-3"><a
+                                                id="mean-stack-mean-network-deploy-link"
+                                                href="#mean-stack-mean-network-deploy" class="level-3">部署</a></li>
+                                    </ul>
+                                </li>
+                                <li id="mean-stack-config-item" class="level-2"><a id="mean-stack-config-link"
+                                                                                   href="#mean-stack-config"
+                                                                                   class="level-2">配置</a>
+                                    <ul class="level-3" id="mean-stack-config-list">
+                                        <li id="mean-stack-config-environmental-settings-item" class="level-3"><a
+                                                id="mean-stack-config-environmental-settings-link"
+                                                href="#mean-stack-config-environmental-settings" class="level-3">环境设置</a></li>
+                                        <li id="mean-stack-config-logging-item" class="level-3"><a
+                                                id="mean-stack-config-logging-link" href="#mean-stack-config-logging"
+                                                class="level-3">日志</a></li>
+                                    </ul>
+                                </li>
+                                <li id="mean-stack-staying-up-to-date-item" class="level-2"><a
+                                        id="mean-stack-staying-up-to-date-link" href="#mean-stack-staying-up-to-date"
+                                        class="level-2">Staying up to date</a></li>
+                                <li id="mean-stack-hosting-mean-item" class="level-2"><a
+                                        id="mean-stack-hosting-mean-link" href="#mean-stack-hosting-mean"
+                                        class="level-2">Hosting MEAN</a>
+                                    <ul class="level-3" id="mean-stack-hosting-mean-list">
+                                        <li id="mean-stack-hosting-mean-heroku-item" class="level-3"><a
+                                                id="mean-stack-hosting-mean-heroku-link"
+                                                href="#mean-stack-hosting-mean-heroku" class="level-3">Heroku</a></li>
+                                        <li id="mean-stack-hosting-mean-openshift-item" class="level-3"><a
+                                                id="mean-stack-hosting-mean-openshift-link"
+                                                href="#mean-stack-hosting-mean-openshift" class="level-3">OpenShift</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="mean-stack-more-information-item" class="level-2"><a
+                                        id="mean-stack-more-information-link" href="#mean-stack-more-information"
+                                        class="level-2">More Information</a></li>
+                                <li id="mean-stack-credits-item" class="level-2"><a id="mean-stack-credits-link"
+                                                                                    href="#mean-stack-credits"
+                                                                                    class="level-2">Credits</a></li>
+                                <li id="mean-stack-license-item" class="level-2"><a id="mean-stack-license-link"
+                                                                                    href="#mean-stack-license"
+                                                                                    class="level-2">License</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div role="flatdoc-content" class="content">
+
+        <h1 id="mean-stack"><a href="http://mean.io/#!/"><img src="./assets/img/meanlogo.png"
+                                                           alt="MEAN Logo"></a> MEAN Stack</h1>
+
+        <p>
+            MEAN 是一个基于应用的框架，使用<a href="http://www.mongodb.org/">MongoDB</a>、<a
+                href="http://www.nodejs.org/">Node.js</a>、<a href="http://expressjs.com/">Express</a>和<a
+                href="http://angularjs.org/">AngularJS</a>作为基本点。它被设计用来给以你一种快速有组织的方式去开发web
+            应用，MEAN像Mongoose和Passprot的预绑定、配置化一样使用模块。我们主要关心怎么使用流行框架和解决常见整合问题即可。
+        </p>
+
+        <h2 id="mean-stack-prerequisite-technologies">前期准备</h2>
+
+        <h3 id="mean-stack-prerequisite-technologies-linux">Linux</h3>
+        <ul>
+            <li><em>Node.js</em> - <a href="http://nodejs.org/download/">下载</a> 安装Node.js, nodeschool
+                有一个免费的 <a href=" http://nodeschool.io/#workshoppers">node教程</a> 让你快速上手。
+            </li>
+            <li><em>MongoDB</em> - <a href="http://www.mongodb.org/downloads">下载</a> 安装mongodb - 如果你是新手，还可以 <a
+                    href="http://docs.mongodb.org/manual">查看使用手册</a>。
+            </li>
+        </ul>
+        <p>如果你正在使用ubuntu，有一个更好的仓库去使用…</p>
+        <pre><code class="lang-bash">$ curl -sL https:<span class="comment">//deb.nodesource.com/setup | sudo bash -</span>
+$ sudo apt-get update
+$ sudo apt-get install nodejs</code></pre>
+        <ul>
+            <li><em>Git</em> - 使用包管理器去获取git或者 <a href="http://git-scm.com/downloads">直接下载</a>。
+            </li>
+        </ul>
+        <h3 id="mean-stack-prerequisite-technologies-windows">Windows</h3>
+        <ul>
+            <li><em>Node.js</em> - <a href="http://nodejs.org/download/">下载</a> 安装Node.js, nodeschool
+                有一个免费的 <a href=" http://nodeschool.io/#workshoppers">node教程</a> 让你快速上手。
+            </li>
+            <li><em>MongoDB</em> - 跟随来自mongodb站点的一个不错的教程去做 - <a
+                    href="http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows">“Install Mongodb On
+                Windows”</a></li>
+            <li><em>Git</em> - 最简单安装git的方式是下载和安装 <a href="http://git-scm.com/download/win">Git for Windows</a>，
+                然后通过 <em>git bash</em> 应用运行其余命令（通过命令提示符）</li>
+        </ul>
+        <h3 id="mean-stack-prerequisite-technologies-osx">OSX</h3>
+        <ul>
+            <li><em>Node.js</em> - <a href="http://nodejs.org/download/">下载</a> 安装Node.js 或者使用
+                内置软件包brew与macports。
+            </li>
+            <li><em>MongoDB</em> - 跟随这里的教程 - <a
+                    href="http://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/">Install mongodb on OSX</a>
+            </li>
+            <li><em>git</em> - <a href="http://git-scm.com/download/mac">从这里</a> 获取Git</li>
+        </ul>
+        <h2 id="mean-stack-prerequisite-packages">必备安装包</h2>
+        <ul>
+            <li>使用grunt或者gulp，当前版本Mean都可以正常使用..
+                <pre><code>$ npm install -g gulp<br/>// and bower<br/>$ npm install -g bower</code></pre>
+            </li>
+        </ul>
+        <h2 id="mean-stack-installation">安装</h2>
+
+        <p>开始MEAN之前先从NPM安装 <code>mean-cli</code> 包。
+            这样做会添加一个 <em>mean</em> 命令，通过这个命令可以很方便的与你的Mean基础应用交互（安装，管理，更新。。。）。</p>
+
+        <h3 id="mean-stack-installation-install-the-mean-cli">安装MEAN命令行界面</h3>
+        <pre><code class="lang-bash">$ npm install -g mean-cli<br/>$ mean init &lt;myApp&gt;<br/>$ cd &lt;myApp&gt; &amp;&amp; npm install</code></pre>
+        <h3 id="mean-stack-installation-invoke-node-with-a-task-manager">从任务管理器启用node</h3>
+
+        <p>Mean支持使用gulp任务运行工具运行一系列应用在代码上的服务。
+            运行如下命令启动你的应用 - </p>
+        <pre><code class="lang-bash">$ gulp</code></pre>
+        <p>或者，当你没有使用 <code>gulp</code> （比如生产环境）的时候，你可以运行：</p>
+        <pre><code class="lang-bash">$ node server</code></pre>
+        <p>然后，打开浏览器访问：</p>
+        <pre><code class="lang-bash">http:<span class="comment">//localhost:<span
+                class="number">3000</span></span></code></pre>
+        <h3 id="mean-stack-installation-troubleshooting">故障检测</h3>
+
+        <p>根据你的操作系统和必备安装包的版本，安装过程中可能会遭遇一些问题。</p>
+
+        <p>大部分的问题都可以通过以下的步骤解决，但如果你不能找出解决方法，可以通过仓库问题跟踪或者下面提供的链接随时联系我们。</p>
+        <h4>更新 NPM、Bower 或 Grunt</h4>
+
+        <p>有时安装的时候你会发现存在一个奇怪的问题比如 npm的 <em>Error: ENOENT</em>。通常情况下更新这些工具到最新版即可解决这些问题</p>
+        <ul>
+            <li><p>更新 NPM:</p>
+                <pre><code class="lang-bash">$ npm update -g npm</code></pre>
+            </li>
+            <li><p>更新 Grunt:</p>
+                <pre><code class="lang-bash">$ npm update -g grunt-cli</code></pre>
+            </li>
+            <li><p>更新 Bower:</p>
+                <pre><code class="lang-bash">$ npm update -g bower</code></pre>
+            </li>
+        </ul>
+        <h4>清理 NPM 和 Bower 缓存</h4>
+
+        <p>NPM 和 Bower 有一个缓存机制保留已经安装过的软件包。我们发现经常清理缓存能够解决许多由此产生的许多问题。</p>
+        <ul>
+            <li><p>NPM 缓存清理:</p>
+                <pre><code class="lang-bash">$ npm cache clean</code></pre>
+            </li>
+            <li><p>Bower 缓存清理:</p>
+                <pre><code class="lang-bash">$ bower cache clean</code></pre>
+            </li>
+        </ul>
+        <h4>Windows 8 / 8.1下的安装问题</h4>
+
+        <p>有些Mean.io依赖库使用 <a href="https://github.com/TooTallNate/node-gyp">node-gyp</a> 需要Python版本2.7.x的支持。
+            如果看到跟node-gyp相关的错误可以重建以下的几个步骤:</p>
+        <ol>
+            <li>安装 <a href="https://www.python.org/downloads/">Python 2.7.x</a></li>
+            <li>安装 <a href="http://www.microsoft.com/ru-ru/download/details.aspx?id=34673">Microsoft Visual Studio
+                C++ 2012 Express</a></li>
+            <li>运行NPM更新</li>
+        </ol>
+        <pre><code class="lang-bash">$ npm update -g</code></pre>
+        <h4>Git “not found” on Windows</h4>
+
+        <p>尝试执行 <code>mean init</code>，如果获得这个错误:</p>
+        <pre><code class="lang-text">Prerequisite not installed: git</code></pre>
+        <p>同时确信已经安装Git for Windows，那么它还没有加入到环境变量里。
+            找到包含git.exe的文件夹 (比如 <code>C:\Program Files (x86)\Git\cmd</code>) 添加到PATH中。</p>
+
+        <h2 id="mean-stack-technologies">技术</h2>
+
+        <h3 id="mean-stack-technologies-the-mean-stack">MEAN全栈</h3>
+
+        <p>MEAN 是以下几项的首字母缩略词 <em>M</em>ongo, <em>E</em>xpress.js , <em>A</em>ngular.js and <em>N</em>ode.js</p>
+        <dl class="dl-horizontal">
+            <dt>MongoDB</dt>
+            <dd>访问MongoDB官方网站，继续查阅它的使用手册，能够更好的帮助你理解NoSQL和MongoDB。
+            </dd>
+            <dt>Express</dt>
+            <dd>理解express的最佳方式是访问它的官方网站，有专门的Express手册；你也可以访问它的StackOverflow跟帖，获取更多资源。
+            </dd>
+            <dt>AngularJS</dt>
+            <dd>Angular的官方站点是一个很好的起点。CodeSchool 和 google 为初学者制作了一个<a
+                    href="https://www.codeschool.com/courses/shaping-up-with-angular-js">很棒的教程</a>，
+                同时有一个<a href="https://egghead.io/">Egghead</a>制作的angular视频.
+            </dd>
+            <dt>Node.js</dt>
+            <dd>访问Node.js官方网站和它的StackOverflow跟帖，能够让你不大一会儿即可熟悉Node.js平台。
+            </dd>
+        </dl>
+        <h3 id="mean-stack-technologies-additional-tools">附加工具</h3>
+        <ul>
+            <li><a href="http://mongoosejs.com/">Mongoose</a> - mongodb的node.js驱动，负责为node.js提供优雅的mongodb对象模型
+            </li>
+            <li><a href="http://passportjs.org/">Passport</a> - 一个Node.js的验证中间件，支持使用账号密码、Facebook、Twitter等
+                的验证。
+            </li>
+            <li><a href="http://getbootstrap.com/">Twitter Bootstrap</a> - 最受欢迎的开发响应式、移动优先项目的HTML、CSS和JS 框架。
+            </li>
+            <li><a href="http://angular-ui.github.io/bootstrap/">UI Bootstrap</a> - 将Bootstrap组件写入纯正的AngularJS。
+            </li>
+        </ul>
+        <h2 id="mean-stack-cli">命令行界面（CLI）</h2>
+
+        <h3 id="mean-stack-cli-overview">预览</h3>
+
+        <p>MEAN CLI是一个简单的命令行工具用来安装和管理MEAN应用。作为Mean.io项目的核心模块，它提供了一些有用的工具能够更简单的与
+            你的MEAN应用交互，附加的组件比如：脚手架（scaffolding）, 模块创建和管理, 状态检查, 以及用户管理</p>
+        <pre><code class="lang-bash">$ mean<br/>$ mean --help<br/>$ mean help</code></pre>
+        <p><code>mean help</code> 也能够用于与任一命令组合，获取更多关于细节功能的信息。例如：使用 <code>mean help init</code> 去查看更多关于init的选项</p>
+        <pre><code class="lang-bash">$ mean help [command]</code></pre>
+        <h3 id="mean-stack-cli-users">用户</h3>
+
+        <p>显示一个明确顾客的信息，通过使用 <code>mean user email</code>。邮箱是必须具备的。
+            用户角色可以通过 <code>--addRole (或 -a)</code> 和 <code>--removeRole (或
+                -r)</code> 选项各自指派或移除。</p>
+
+        <p>例如，<i>admin</i> 角色是编辑tokens所必须的。</p><pre><code class="lang-bash">$ mean user &lt;email&gt;
+$ mean user &lt;email&gt; --addRole &lt;role&gt;;
+$ mean user &lt;email&gt; --removeRole &lt;role&gt;;</code></pre>
+        <h3 id="mean-stack-cli-packages">包</h3><h4>管理</h4>
+
+        <p class="alert alert-warning">以下的所有命令都必须在你的MEAN应用根目录下运行。</p>
+
+        <p>通过CLI工具可以安装和卸载捐献包。同时，可以使用 <code>list</code> 命令来查看当前已经安装的模块。</p>
+        <pre><code class="lang-bash">$ mean list<br/>$ mean install &lt;module&gt;<br/>$ mean uninstall &lt;module&gt;</code></pre>
+        <p class="alert alert-info">通过安装器安装过的MEAN包可以在 <i>/node_modules</i> 中找到</p><em>mean
+            search</em><code>bash
+            $ mean search [packagename]</code><code>mean search</code><code>mean search [packagename]</code><code>mean
+            init</code><code>bash
+            $ mean init [name]
+            $ cd [name] &amp;&amp; npm install</code>
+
+        <p class="alert alert-info">注释：为使该命令正确执行，<a href="http://git-scm.com/downloads">git</a> 必须安装。</p>
+
+        <h3 id="mean-stack-cli-misc">杂项</h3>
+
+        <p></p><h4>状态</h4>
+
+        <p>为一个特定的环境 (比如开发 (默认), 测试, 声场) 检查数据库连接，同时确认meanio命令行版本是最新的。</p>
+
+        <p></p>
+        <pre><code class="lang-bash">$ mean status</code></pre>
+        <p></p><h4>文档</h4>
+
+        <p></p>
+
+        <p></p>
+
+        <p>一个在你的默认浏览器里打开meanio文档的简单捷径。</p>
+
+        <p></p>
+        <pre><code class="lang-bash">$ mean docs</code></pre>
+        <h2 id="mean-stack-packages">包</h2>
+        <p>mean.io中的一切都是一个包，当创建继承自mean的自定义功能时，确保创建你自己的包而不是去修改核心包。</p>
+
+        <p>mean.io的包系统允许开发者创建提供可用功能的模块化代码，其他的mean开发者也可以使用这些代码。
+            这些包发布之后，即插即用，同时相较于传统的npm包使用更加简单。</p>
+
+        <p>mean.io 包系统融入mean项目，仿佛这些代码本身就是mean的一部分，同时提供给开发者所有必须的功能用来把他们的包融入到本机项目。</p>
+
+        <p>有两种类型的包：</p>
+
+        <p><strong>自定义包</strong> 由mean scaffolder（脚手架搭建工？）生成，包含了你的大部分应用逻辑。
+            自定义包可以在 <em>/packages/custom</em> 下找到， 同时可以发布成捐献包供其他开发者使用。</p>
+
+        <p><strong>捐献包</strong> 是有mean安装器安装，可以在 <em>/packages/contrib</em> 下找到。捐献包是即插即用的。</p>
+
+        <h3 id="mean-stack-packages-core-packages">核心包</h3>
+
+        <p>所有的 <code>Core</code> 包都可以被其他包重写，允许你去继承和适配以适应你的特定需要。
+            查看 <code>视图重写</code> 以获得详细例子。</p>
+
+        <h4>系统</h4>
+
+        <p>系统包创建了最基本的页面，比如定义网站布局和为页面加入菜单。
+            系统包也允许我们定义一些东西，比如在客户端和服务端的渲染引擎、静态文件和路由。</p>
+
+        <h4>用户</h4>
+
+        <p>用户包创建用户的数据库模型，提供验证之外，也提供许多登录和注册附加组件。</p>
+
+        <h4>入口</h4>
+
+        <p>入口包管理权限和中间件。它依赖于用户包并管理许多验证方法。</p>
+
+        <h4>主题</h4>
+
+        <p>主题包添加了一些基本的CSS和一些其他的资源，比如图片和背景等。</p>
+
+        <h4>文章</h4>
+
+        <p>文章包是一个典型的包，用作上手例子，管理的内容可以用在一个blog或者cms中。在服务端和客户端实现了完整的CRUD功能。</p>
+
+        <h3 id="mean-stack-packages-files-structure">文件结构</h3>
+
+        <p>文件结构与mean项目本身是相似的。</p>
+
+        <p><code>基本</code> 文件位于包的 <code>root</code> 下。</p>
+
+        <p><strong>服务端</strong></p>
+
+        <p>包被注册在 <strong>app.js</strong> 里。
+            定义了包的名称、版本和 <code>mean=true</code> 在 <strong>package.json</strong>中。</p>
+
+        <p>所有的服务端代码都位于 <code>/server</code> 文件夹下。</p>
+        <pre><code>Server<br/>--- config # 配置文件<br/>--- controllers # 服务端逻辑
+--- models # 数据库Schema模型<br/>--- routes # 路由 Rest api端点<br/>--- views # 基于html的Swig渲染</code></pre>
+        <p><strong>客户端</strong></p>
+
+        <p>所有客户端代码都位于 <code>/public</code> 文件夹下</p><pre><code>public<br/>--- assets # JavaScript/CSS/Images 没有聚合(not aggregated)
+--- controllers # Angular控制器<br/>--- config # 包含路由文件
+--- services # Angular服务层 (同时也是指令和过滤器文件夹)<br/>--- views # Angular视图</code></pre>
+        <p>所有的位于 <code>public</code> 下的JavaScript都会被自动聚合（aggregated），除了位于 <code>public/assets</code> 下的例外，
+            可以使用 <code>aggregateAsset()</code> 方法手动添加。</p>
+
+        <p>包中位于 <code>public</code> 文件夹下的文件都可以在外部通过 <code>/[package-name]/path-to-file-relative-to-public</code> 路径去访问。
+            例如，访问 <code>Tokens</code> 的Angular控制器，<code>tokens/controllers/tokens.js</code>。
+        </p>
+
+        <h3 id="mean-stack-packages-registering-a-package">注册一个包</h3>
+        <p>一个包为了起作用需要先注册。通过注册可以让包系统意识到这个包已经准备好了，并且其他的包可以依赖这个包。
+            包在 <code>app.js</code> 内注册。</p>
+
+        <p>When registering you are required to declare all your dependencies in order for the package system to make
+            them available to your package.</p>
+        <p>当注册包的时候，你需要生命你的所有依赖，包系统会让这些依赖变得可用。</p>
+        <pre><code class="lang-javascript"><span class="comment">// Example of registering the MyPackage</span>
+MyPackage.register(<span class="keyword">function</span>(app, auth, database) {
+    <span class="comment">// ...</span>
+});</code></pre>
+        <p>MEAN has 3 pre registered dependencies:
+            - <code>app</code> Makes the express app available .
+            - <code>auth</code> Includes some basic authentication functions
+            - <code>database</code> Contains the Mongoose database connection</p>
+        <p>MEAN 有3个已经注册过的依赖库:
+            - <code>app</code> 使express app 可用。
+            - <code>auth</code> 包括一些基本的验证方法。
+            - <code>database</code> 包含Mongoose数据库连接。</p>
+        <blockquote>
+            <p>All dependencies specified must be registered in order to use them</p>
+            <p>为了使用这些具体说明的依赖库，必须要先注册。</p>
+        </blockquote>
+        <h3 id="mean-stack-packages-dependency-injection">依赖注入</h3>
+        <blockquote>
+            <p>An injection is the passing of a dependency (a service) to a dependent
+                object (a client). The service is made part of the client’s state.
+                Passing the service to the client, rather than allowing a client to
+                build or find the service, is the fundamental requirement of the
+                pattern. <a href="http://en.wikipedia.org/wiki/Dependency_injection">Wikipedia</a></p>
+            <p>注入是把一个被依赖对象（service）传递给依赖它的对象（client）。服务端是客户端状态的一部分。
+                传递服务至客户端，而不是允许客户端去构建或者查找服务，是这种模式的最根本的规定。
+                <a href="http://en.wikipedia.org/wiki/Dependency_injection">Wikipedia</a></p>
+        </blockquote>
+        <p>Dependency injection allows you to declare what dependencies you require and rely on the package system to
+            resolve all dependencies for you. Any package registered is automatically made available to anyone who would
+            like to depend on them.</p>
+        <p>依赖注入允许你去生命你需要的依赖，依靠包系统来为你解析所有依赖。任何一个已经注册过的包，对于任意想要依赖它们的包，
+            都会自动变得可用。</p>
+
+        <p>再次查看注册的例子，我们可以看到 <code>MyPackage</code> 依赖于
+            <code>Tokens</code> 包，可以使用它的全部功能，包括重写它。</p>
+        <pre><code
+                class="lang-javascript"><span class="comment">// 注册tokens的例子</span>
+MyPackage.register(<span class="keyword">function</span>(app, auth, database, Tokens) {
+    <span class="comment">// 我可以在我的模块里使用tokens。</span>
+    MyPackage.someExampleFunction(<span class="string">'some parameter'</span>);
+    <span class="comment">// 我可以重写函数</span>
+    MyPackage.someExampleFunction = <span class="keyword">function</span>(param) {
+    <span class="comment">// 我自定义的逻辑</span>
+    };
+});</code></pre>
+        <blockquote>
+            <p>在代码里出现的包名称，一般是首字母大写的形式。</p>
+        </blockquote>
+        <h3 id="mean-stack-packages-angular-modules-and-dependencies">Angular模块和依赖</h3>
+
+        <p>Every package registration automatically creates a corresponding angular module of the form <code>mean.[package-name]</code>
+        </p>
+        <p>每个包注册的时候都会以 <code>mean.[package-name]</code> 的形式自动创建一个相应的angular模块。
+        </p>
+
+        <p>The package system injects this information into the mean init functions and allows developers to base their
+            controllers, services, filters, directives etc on either an existing module or on their own one.</p>
+        <p>包系统会在mean的init方法里注入一些信息，
+            并且允许开发者在已经存在的模块或他们自己的模块的基础之上，开发他们的控制器、服务层、过滤器、指令等。</p>
+
+        <p>In addition you are able to declare which angular dependencies you want your angular module to use.</p>
+        <p>除此之外你还可以声明你想要你的angular模块使用哪些angular依赖。</p>
+
+        <p>下面是一个添加angular依赖到我们的angular模块的一个例子。</p>
+        <pre><code
+                class="lang-javascript"><span class="comment">// 添加一个ngDragDrop依赖到我们的angular模块中</span>
+MyPackage.angularDependencies([<span class="string">'ngDragDrop'</span>]);</code></pre>
+        <blockquote>
+            <p>作为一个例子，查看assets部分怎样添加外部的库到客户端，比如 <code>gDragDrop</code> javascript库。</p>
+        </blockquote>
+        <h3 id="mean-stack-packages-assets-and-aggregation">Assets与Aggregation</h3>
+
+        <p>所有的资源文件，比如图片、js库、css脚本，都应该放置在包文件结构的 <code>public/assets</code> 里。</p>
+
+        <p>Javascript and CSS from <code>assets</code> can be aggregated to the global aggregation files. By default all
+            javascript is automatically wrapped within an anonymous function unless given the option
+            <code>{global:true}</code> to not enclose the javascript within a contained scope</p>
+        <p>在 <code>assets</code> 中的js和css都可以汇总到全局的聚合文件。默认情况下所有的js是自动包裹在一个匿名函数里，除非设置
+            <code>{global:true}</code> 选项，使得javascript不围绕在一个作用域（包含域？）里。</p>
+        <pre><code class="lang-javascript"><span class="comment">// 添加jquery到mean工程里</span>
+MyPackage.aggregateAsset(<span class="string">'js'</span>,<span class="string">'jquery.min.js'</span>);
+
+<span class="comment">// 添加另外一个库 - global 默认情况下为false</span>
+MyPackage.aggregateAsset(<span class="string">'js'</span>,<span class="string">'jquery.min.js'</span>,
+{global:true});
+
+<span class="comment">// 添加一些css到mean工程里</span>
+MyPackage.aggregateAsset(<span class="string">'css'</span>,<span
+    class="string">'default.css'</span>);</code></pre>
+        <blockquote>
+            <p>Javascript files outside of assets are automatically aggregated and
+                injected into the mean project. As a result libraries that you do not
+                want aggregated should be placed within <code>public/assets/js</code></p>
+            <p>处于assets外部的javascript文件会自动聚合并注入mean工程。因此你不想聚合的库，应该放置在 <code>public/assets/js</code> 里。</p>
+        </blockquote>
+        <p>The aggregation supports the ability to control the location of where to inject the aggregated code and if
+            you add a weight and a group to your aggregateAsset method you can make sure it’s included in the correct
+            region.</p>
+        <p>聚合提供了控制在什么位置注入聚合代码的能力，并且如果你添加一个砝码(weight)和分组(group)选项到你的aggregateAsset方法里，
+            可以保证它会引入到正确的位置。</p>
+        <pre><code class="lang-javascript">MyPackage.aggregateAsset(<span class="string">'js'</span>,<span
+                class="string">'first.js'</span>,{global:true, weight: -<span class="number">4</span>, group: <span
+                class="string">'header'</span>});</code></pre>
+        <blockquote>
+            <p>The line that gets loaded in your head.html calls the header group and injects the js you want to include
+                first-
+                in packages/system/server/views/includes/head.html </p>
+            <p>上面一行加载到你的head.html文件里的被称作header组，并且注入你想要首先引入的js -
+                位于 packages/system/server/views/includes/head.html 里</p>
+        </blockquote>
+        <h3 id="mean-stack-packages-settings-object">Settings对象</h3>
+
+        <p>The settings object is a persistence object that is stored in the packages collection and allows for saving
+            persistent information per package such as configuration options or admin settings for the package.</p>
+        <p>settings对象是一个存储在包集合里持久存在的对象，为每个包保存持久信息，例如一个包的配置项或者管理设置。</p>
+
+        <p> Receives two arguments the first being the settings object the second is a callback function</p>
+        <p> 接收两个参数：第一个作为settings对象，第二个是一个回调函数。</p>
+        <pre><code class="lang-javascript">MyPackage.settings({<span class="string">'someSetting'</span>:<span
+                class="string">'some value'</span>}, <span class="keyword">function</span> (err, settings) {
+    <span class="comment">// 设置成功之后你将会接收到settings对象</span>
+});
+
+<span class="comment">// 另一个保存settings对象的例子，这次没有callback函数。</span>
+<span class="comment">// 这次写入覆盖最近的settings。</span>
+MyPackage.settings({<span class="string">'anotherSettings'</span>:<span class="string">'some value'</span>});
+
+<span class="comment">// 获取settings。获取最近保存的settings。</span>
+MyPackage.settings(<span class="keyword">function</span> (err, settings) {
+    <span class="comment">// 你现在拿到了settings对象</span><br/>});</code></pre>
+        <blockquote>
+            <p>Each time you save settings you overwrite your previous value.
+                Settings are designed to be used to store basic configuration options
+                and should not be used as a large data store</p>
+            <p>每一次保存settings都会覆盖之前保存的值。settings是设计用来存储基本的配置项，不应该用作大数据的存储。</p>
+        </blockquote>
+        <h3 id="mean-stack-packages-express-routes">Express路由</h3>
+
+        <p>All routing to server side controllers is handled by express routes. The package system uses the typical
+            express approach. The package system has a route function that passes along the package object to the main
+            routing file typically <code>server/routes/myPackage.js</code></p>
+        <p>所有路由至服务端的控制器都由express路由控制。包系统是用的是典型的express方法（处理？通道？）。
+            包系统有一个路由方法，典型地传递包对象到达主要的路由文件 <code>server/routes/myPackage.js</code> 。</p>
+
+        <p> By default the Package Object is passed to the routes along with the other arguments
+            <code>MyPackage.routes(app, auth, database);</code></p>
+        <p> 默认情况下包对象传递路由使用另外一个参数
+            <code>MyPackage.routes(app, auth, database);</code></p>
+
+        <p>来自 <code>server/routes/myPackage.js</code> 的一个例子</p>
+        <pre><code class="lang-javascript"><span
+                class="comment">// 包自然是放在第一个参数位置的</span>
+module.exports = <span class="keyword">function</span>(MyPackage, app, auth, database) {
+    <span class="comment">// route例子</span>
+    app.get(<span class="string">'/myPackage/example/anyone'</span>, <span class="keyword">function</span>(req,res,next) {
+        res.send(<span class="string">'Anyone can access this'</span>);
+    });
+};</code></pre>
+        <h3 id="mean-stack-packages-angular-routes">Angular路由</h3>
+
+        <p>angular路由被定义在 <code>public/routes/myPackage.js</code> 中。就像在最新版本的mean中所提到的，
+            包使用 <code>$stateProvider</code> 路由</p>
+        <pre><code class="lang-javascript">$stateProvider
+    .state(<span class="string">'myPackage example page'</span>, {
+        url: <span class="string">'/myPackage/example'</span>,
+        templateUrl: <span class="string">'myPackage/views/index.html'</span>
+    });</code></pre>
+        <blockquote>
+            <p>The angular views are publically accessible via templateUrl when
+                prefixed with the package name</p>
+            <p>当angular视图带有包名作为前缀时，更容易通过templateUrl到达。</p>
+        </blockquote>
+        <h3 id="mean-stack-packages-menu-system">菜单系统</h3>
+        <p>Packages are able to hook into an existing menu system and add links to various menus integrated within
+            Mean.</p>
+        <p>包可以钩入一个已经存在的菜单系统，添加许多菜单连接，使得这些链接与菜单融为一体。</p>
+
+        <p>Each link specifies its <code>title</code>, <code>template</code>, <code>menu</code> and <code>role</code>
+            that is allowed to see the link. If the menu specified does not exist, a new menu will be created. The menu
+            object is made accessible within the client by means of a <em>menu angular service</em> that queries the
+            menu controller for information about links.</p>
+        <p>每一个链接指明了它的 <code>title</code>, <code>template</code>, <code>menu</code> 和允许查看链接的 <code>role</code>。
+            如果这个菜单指向不存在，一个新的菜单选项将会被创建。菜单对象在客户端内很容易获得，
+            是借助于一个从菜单控制器查询链接信息的 <em>menu angular service</em>。</p>
+
+        <p>下面是一个 <code>app.js</code> 里的怎样为主菜单添加一个链接的例子。</p>
+        <pre><code class="lang-javascript"><span class="comment">// 我们要为所有的已验证用户在主菜单添加一个链接</span>
+MyPackage.menus.add({
+    title: <span class="string">"myPackage example page"</span>,
+    link: <span class="string">"myPackage example page"</span>,
+    roles: [<span class="string">"authenticated"</span>],
+    menu: <span class="string">"main"</span>
+});</code></pre>
+        <blockquote>
+            <p>你可以查看mean工程的angular header控制器以获得更多信息。
+                你可以找到 <code>public/system/controllers/header.js</code>，查看菜单服务是怎么实现的。</p>
+        </blockquote>
+        <h3 id="mean-stack-packages-html-view-rendering">Html视图渲染</h3>
+
+        <p>The packages come built in with a rendering function allowing packages to render static html. The default
+            templating engine is <em>swig</em>. The views are found in <code>server/views</code> of the package and
+            should end with the <code>.html</code> suffix</p>
+        <p>包内建一个渲染静态html的渲染函数。默认的模板引擎为 <em>swig</em>。视图可以在包的 <code>server/views</code> 下找到，
+            并且要以 <code>.html</code> 后缀结尾。</p>
+
+        <p>下面是一个渲染一些简单html的例子。</p>
+        <pre><code class="lang-javascript">app.get(<span
+                class="string">'/myPackage/example/render'</span>, <span class="keyword">function</span> (req,res,next) {
+    MyPackage.render(<span class="string">'index'</span>, {packageName:<span class="string">'myPackage'</span>},
+        <span class="keyword">function</span> (err, html) {
+        <span class="comment">// 从包的server/views里渲染一个视图</span>
+        res.send(html);
+    });
+});</code></pre>
+        <h3 id="mean-stack-packages-overriding-the-default-layouts">重写默认布局</h3>
+
+        <p>One is able to override the default layout of the application through a custom package.</p>
+        <p>通过一个自定义包是可以重写应用的默认布局的。</p>
+
+        <p>Below is an example overriding the default layout of system and instead using the layourts found locally
+            within the package</p>
+        <p>下面是一个使用包内本地布局文件重写系统包默认布局的例子。</p>
+        <pre><code class="lang-javascript">MyPackage.register(<span
+                class="keyword">function</span>(system, app) {
+    app.set(<span class="string">'views'</span>, __dirname + <span class="string">'/server/views'</span>);
+    <span class="comment">// ...</span></code></pre>
+        <blockquote>
+            <p>Please note that the package must depend on <code>System</code> to ensure it is
+                evaluated after <code>System</code> and can thus override the views folder</p>
+            <p>请记住包必须依赖<code>System</code>包，以确认它可以在<code>System</code>包之后可以被评估，
+                并且因此可以重写视图文件夹。</p>
+        </blockquote>
+        <h3 id="mean-stack-packages-overriding-views">重写视图</h3>
+
+        <p>You may override public views used by certain core packages. To create a custom home page, you would create a
+            custom package and modify the script in it’s public folder like so:</p>
+        <p>你可以重写被某个核心包使用的公共视图。
+            为了创建一个自定义的主页，你会创建一个自定义包，修改包内的公共文件夹里的script，如下所示：</p>
+        <pre><code class="lang-javascript">angular.module(<span
+                class="string">'mean.mycustompackage'</span>, [<span class="string">'mean.system'</span>])
+    .config([<span class="string">'$viewPathProvider'</span>, <span class="keyword">function</span>($viewPathProvider) {
+        $viewPathProvider.override(<span class="string">'system/views/index.html'</span>,
+            <span class="string">'mycustompackage/views/myhomepage.html'</span>);
+    }]);</code></pre>
+        <p>这将会渲染 <em>mycustompackage/views/myhomepage.html</em> 作为主页。</p>
+
+        <h3 id="mean-stack-packages-creating-your-own-package">创建自己的包</h3>
+
+        <p>To create your own package and scaffold its initial code, run the following command:</p>
+        <p>创建你自己的包且自动生成它的初始化代码，使用如下命令：</p>
+        <pre><code class="lang-bash">$ mean package &lt;packageName&gt;</code></pre>
+        <p>这将会在<em>/packages/custom/pkgName</em>创建一个包</p>
+
+        <h3 id="mean-stack-packages-deleting-a-package">删除一个包</h3>
+
+        <p>删除你的包，并且移除你的文件：</p>
+        <pre><code class="lang-bash">$ mean uninstall myPackage</code></pre>
+        <p>这里的 “myPackage” 指你的包的名字。</p>
+
+        <h3 id="mean-stack-packages-contributing-your-package">捐献你的包</h3>
+
+        <p>Once your package is in good shape and you want to share it with the world you can start the process of
+            contributing it and submiting it so it can be included in the package repository.
+            To contribute your package register to the network (see the section below) and run</p>
+        <p>一旦你的包形成一个好的规模，并且你想要和世界分享，你可以开始捐献提交的流程，它会被引入包仓库。
+            为了捐献你的包，注册到mean网络 (查看下面的部分) 然后运行</p>
+        <pre><code
+                class="lang-bash">$ mean register <span
+                class="comment"># 注册到 mean network (see below)</span><br/>$ cd &lt;packages/custom/pkgName&gt;
+$ mean publish</code></pre>
+        <h2 id="mean-stack-mean-network">MEAN Network</h2>
+
+        <p>Mean is a stand-alone instance that you can install locally or host on your server.
+            We want to provide value to developers and are assembling a set of services which will be called the mean
+            network.
+            We’re building all of this as we speak but we allready have some elements in place.</p>
+
+        <h3 id="mean-stack-mean-network-network-user-management">Network User Management</h3><h4>Registration</h4>
+        <pre><code class="lang-bash">$ mean register</code></pre>
+        <h4>Identity</h4>
+        <pre><code class="lang-bash">$ mean whoami</code></pre>
+        <h3 id="mean-stack-mean-network-deploy">Deploy</h3>
+
+        <p>Coming soon!</p>
+
+        <h2 id="mean-stack-config">Config</h2>
+
+        <p>All the configuration is specified in the <a href="/config/">config</a> folder,
+            through the <a href="config/env/">env</a> files, and is orchestrated through the <a
+                    href="https://github.com/linnovate/meanio">meanio</a> NPM module.
+            Here you will need to specify your application name, database name, and hook up any social app keys if you
+            want integration with Twitter, Facebook, GitHub, or Google.</p>
+
+        <h3 id="mean-stack-config-environmental-settings">Environmental Settings</h3>
+
+        <p>There is a shared environment config: <strong>all</strong></p>
+        <ul>
+            <li><strong>root</strong> - This the default root path for the application.</li>
+            <li><strong>port</strong> - DEPRECATED to <strong>http.port</strong> or <strong>https.port</strong>.</li>
+            <li><strong>http.port</strong> - This sets the default application port.</li>
+            <li><strong>https</strong> - These settings are for running HTTPS / SSL for a secure application.</li>
+            <li><strong>port</strong> - This sets the default application port for HTTPS / SSL. If HTTPS is not used
+                then is value is to be set to <strong>false</strong> which is the default setting. If HTTPS is to be
+                used the standard HTTPS port is <strong>443</strong>.
+            </li>
+            <li><strong>ssl.key</strong> - The path to public key.</li>
+            <li><strong>ssl.cert</strong> - The path to certificate.</li>
+        </ul>
+        <p>There are three environments provided by default: <strong>development</strong>, <strong>test</strong>, and
+            <strong>production</strong>.
+            Each of these environments has the following configuration options:</p>
+        <ul>
+            <li><strong>db</strong> - This is where you specify the MongoDB / Mongoose settings</li>
+            <li><strong>url</strong> - This is the url/name of the MongoDB database to use, and is set by default to
+                <strong>mean-dev</strong> for the development environment.
+            </li>
+            <li><strong>debug</strong> - Setting this option to <strong>true</strong> will log the output all Mongoose
+                executed collection methods to your console. The default is set to <strong>true</strong> for the
+                development environment.
+            </li>
+            <li><strong>options</strong> - These are the database options that will be passed directly to
+                mongoose.connect in the <strong>production</strong> environment: [server, replset, user, pass, auth,
+                mongos] (<a href="http://mongoosejs.com/docs/connections.html#options">http://mongoosejs.com/docs/connections.html#options</a>)
+                or read [this] (<a
+                        href="http://mongodb.github.io/node-mongodb-native/driver-articles/mongoclient.html#mongoclient-connect-options">http://mongodb.github.io/node-mongodb-native/driver-articles/mongoclient.html#mongoclient-connect-options</a>)
+                for more information.
+            </li>
+            <li><strong>app.name</strong> - This is the name of your app or website, and can be different for each
+                environment. You can tell which environment you are running by looking at the TITLE attribute that your
+                app generates.
+            </li>
+            <li><strong>Social OAuth Keys</strong> - Facebook, GitHub, Google, Twitter. You can specify your own social
+                application keys here for each platform:
+                <ul>
+                    <li><strong>clientID</strong></li>
+                    <li><strong>clientSecret</strong></li>
+                    <li><strong>callbackURL</strong></li>
+                </ul>
+            </li>
+            <li><strong>emailFrom</strong> - This is the from email address displayed when sending an email.</li>
+            <li><strong>mailer</strong> - This is where you enter your email service provider, username and password.
+            </li>
+        </ul>
+        <p>To run with a different environment, just specify NODE_ENV as you call grunt:</p>
+        <pre><code class="lang-bash">$ NODE_ENV=test grunt</code></pre>
+        <p>If you are using node instead of grunt, it is very similar:</p>
+        <pre><code class="lang-bash">$ NODE_ENV=test node server</code></pre>
+        <p>To simply run tests</p>
+        <pre><code class="lang-bash">$ npm test</code></pre>
+        <blockquote>
+            <p>NOTE: Running Node.js applications in the <strong>production</strong> environment enables caching, which
+                is disabled by default in all other environments.</p>
+        </blockquote>
+        <h3 id="mean-stack-config-logging">Logging</h3>
+
+        <p>As from mean-0.4.4 control over the logging format has been delgated to the env configuration files.
+            The formats and implementation are done using the morgan node module and it’s <a
+                    href="https://github.com/expressjs/morgan#predefined-formats">predefined format</a>
+            Within each configuration file (config/env/development.js) for instance you state the format in the
+            ‘logging’ object.</p><pre><code>'use strict';
+
+            module.exports = {
+            db: 'mongodb://' + (process.env.DB_PORT_27017_TCP_ADDR || 'localhost') + '/mean-dev',
+            debug: true,
+            logging: {
+            format: 'tiny'
+            },</code></pre>
+        <p>The default for the development environment uses <a href="https://github.com/expressjs/morgan#tiny">tiny
+            format</a></p><pre><code>GET /system/views/index.html 304 2.379 ms - -
+            GET /admin/menu/main 304 8.687 ms - -
+            GET /system/assets/img/logos/meanlogo.png 304 2.803 ms - -
+            GET /system/assets/img/backgrounds/footer-bg.png 304 4.481 ms - -
+            GET /system/assets/img/ninja/footer-ninja.png 304 3.309 ms - -
+            GET /system/assets/img/logos/linnovate.png 304 3.001 ms - -</code></pre>
+        <p>The production uses the widely used <a href="https://github.com/expressjs/morgan#combined">combined
+            format</a>.</p><pre><code>:1 - - [22/Mar/2015:13:13:42 +0000] "GET /modules/aggregated.js HTTP/1.1" 200 -
+            "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like
+            Gecko) Chrome/41.0.2272.101 Safari/537.36"
+            ::1 - - [22/Mar/2015:13:13:42 +0000] "GET /modules/aggregated.js?group=header HTTP/1.1" 200 0
+            "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like
+            Gecko) Chrome/41.0.2272.101 Safari/537.36"
+            ::1 - - [22/Mar/2015:13:13:42 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X
+            10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"
+            ::1 - - [22/Mar/2015:13:13:42 +0000] "GET /modules/aggregated.css HTTP/1.1" 200 - "http://localhost:3000/"
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101
+            Safari/537.36"</code></pre>
+        <h2 id="mean-stack-staying-up-to-date">Staying up to date</h2>
+
+        <p>After initializing a project, you’ll see that the root directory of your project is already a git repository.
+            MEAN uses git to download and update its own code. To handle its own operations, MEAN creates a remote
+            called <code>upstream</code>. This way you can use git as you would in any other project. </p>
+
+        <p>To update your MEAN app to the latest version of MEAN</p><pre><code class="lang-bash">$ git pull upstream
+            master
+            $ npm install</code></pre>
+        <p>To maintain your own public or private repository, add your repository as remote. See here for information on
+            <a href="https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line">adding
+                an existing project to GitHub</a>.</p><pre><code class="lang-bash">$ git remote add origin &lt;remote
+            repository URL&gt;
+            $ git push -u origin master</code></pre>
+        <h2 id="mean-stack-hosting-mean">Hosting MEAN</h2>
+
+        <p>Since version 0.4.2 MEAN provides a command to easily upload your app to the <em>mean cloud</em>.
+            To do so all you need to do is the following steps.</p>
+        <ol>
+            <li>make sure you have a unique name for your app (not the default mean) and that the name is in the
+                package.json
+            </li>
+            <li>Run <code>mean deploy</code></li>
+            <li>It will create the meanio remote which can be used to update your remote app by <code>git push meanio
+                master</code></li>
+            <li>You can add remote command using the —remote flag for instance to add a role to a user on the remote
+                cloud instance run <code>mean user -a RoleName emailAddress --remote</code></li>
+            <li>To get an idea of whats happening on the mean log (node.js based logging) run <code>mean logs -n
+                100</code> to get the last 100 lines…
+            </li>
+        </ol>
+        <h3 id="mean-stack-hosting-mean-heroku">Heroku</h3>
+
+        <p>Before you start make sure you have the <a href="https://toolbelt.heroku.com/">Heroku toolbelt</a>
+            installed and an accessible MongoDB instance - you can try <a href="http://www.mongohq.com/">MongoHQ</a>
+            which has an easy setup).</p>
+
+        <p>Add the db string to the production env in <em>server/config/env/production.js</em>.</p><pre><code
+                class="lang-bash">$ git init
+            $ git add .
+            $ git commit -m <span class="string">"initial version"</span>
+            $ heroku apps:create
+            $ heroku config:add NODE_ENV=production
+            $ heroku config:add BUILDPACK_URL=https:<span class="comment">//github.com/mbuchetics/heroku-buildpack-nodejs-grunt.git</span>
+            $ git push heroku master
+            $ heroku config:set NODE_ENV=production</code></pre>
+        <h3 id="mean-stack-hosting-mean-openshift">OpenShift</h3>
+        <ol>
+            <li>Register for an account on Openshift (<a href="http://www.openshift.com">http://www.openshift.com</a>).
+            </li>
+            <li>Create an app on Openshift by choosing a ‘Node’ type site to create. Create the site by making Openshift
+                use Linnovate’s Openshift git repo as its source code (<a
+                        href="https://github.com/linnovate/mean-on-openshift.git">https://github.com/linnovate/mean-on-openshift.git</a>).
+            </li>
+            <li>On the second screen after the new application has been created, add a Mongo database.</li>
+            <li>When the site has been built, you can visit it on your newly created domain, which will look like
+                my-domain.openshift.com. You may need to restart the instance on Openshift before you can see it. It
+                will look like Mean.io boilerplate.
+            </li>
+            <li>On your new app’s console page on Openshift, make a note of the git repo where the code lives. Clone
+                that repo to your local computer where your mean.io app codebase is.
+            </li>
+            <li>Merge your completed local app into this new repo. You will have some conflicts, so merge carefully,
+                line by line.
+            </li>
+            <li>Commit and push the repo with the Openshift code back up to Openshift. Restart your instance on
+                Openshift, you should see your site!
+            </li>
+        </ol>
+        <h2 id="mean-stack-more-information">More Information</h2>
+        <ul>
+            <li>Visit us at <a href="http://www.linnovate.net/">Linnovate.net</a>.</li>
+            <li>Visit our <a href="http://www.meanleanstartupmachine.com/">Ninja’s Zone</a> for extended support.</li>
+        </ul>
+        <h2 id="mean-stack-credits">Credits</h2>
+        <ul>
+            <li>To our awesome <a href="https://github.com/orgs/linnovate/teams/mean">core team</a> with help of our <a
+                    href="https://github.com/linnovate/mean/graphs/contributors">contributors</a> which have made this
+                project a success.
+            </li>
+            <li><a href="https://github.com/vkarpov15">Valeri Karpov</a> for coining the term <em>mean</em> and
+                triggering the mean stack movement.
+            </li>
+            <li><a href="https://github.com/amoshaviv">Amos Haviv</a> for the creation of the initial version of Mean.io
+                while working for us @linnovate.
+            </li>
+            <li><a href="https://github.com/madhums/">Madhusudhan Srinivasa</a> which inspired us with his great work.
+            </li>
+        </ul>
+        <h2 id="mean-stack-license">License</h2>
+
+        <p>We believe that mean should be free and easy to integrate within your existing projects so we chose <a
+                href="http://opensource.org/licenses/MIT">The MIT License</a></p></div>
+</div>
+
+
+</body>
+</html>
